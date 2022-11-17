@@ -6,9 +6,11 @@
 #PBS -l walltime=1:00:00
 #PBS -o dummy.stdout
 #PBS -V
-#PBS -M fkucuksayacigil@ucsd.edu
 #PBS -m abe
 #PBS -j oe
+
+# If you want to receive email notification for job run's start and termination,
+# put this above: #PBS -M <your_email_address>
 
 cd $PBS_O_WORKDIR
 
